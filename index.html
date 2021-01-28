@@ -104,7 +104,7 @@
 
                     txtDate = '';
                     txtName = '';
-                    txtFakultas = '';
+                    txtJurusan = '';
                     txtKelas = '';
                     txtContent = '';
                 }
@@ -152,7 +152,7 @@
             let bg, font, paper, margin, gap, fontsize = 16;
             let txtDate = '',
             txtName = '',
-            txtFakultas = '',
+            txtJurusan = '',
             txtKelas = '',
             txtContent = '';
 
@@ -345,18 +345,18 @@
                     
                     translate(margin - 8, margin * 4);
 
-                    if(txtName && txtKelas && !txtFakultas){
+                    if(txtName && txtKelas && !txtJurusan){
                         text(txtName, 0, -20);
                         text(txtKelas, 0, 0);
-                    } else if(txtName && !txtKelas && txtFakultas){
+                    } else if(txtName && !txtKelas && txtJurusan){
                         text(txtName, 0, -20);
-                        text(txtFakultas, 0, 0);
-                    } else if(txtName && !txtKelas && !txtFakultas){
+                        text(txtJurusan, 0, 0);
+                    } else if(txtName && !txtKelas && !txtJurusan){
                         text(txtName, 0, 0);
-                    } else if(txtName && txtKelas && txtFakultas){
+                    } else if(txtName && txtKelas && txtJurusan){
                         text(txtName, 0, -40);
                         text(txtKelas, 0, -20);
-                        text(txtFakultas, 0, 0);
+                        text(txtJurusan, 0, 0);
                     }
 
                     text(txtDate, 450, 0);
