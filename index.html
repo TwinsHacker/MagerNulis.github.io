@@ -4,10 +4,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Website Nulis Online Otomatis V1">
-  <meta name="author" content="RaghibGB">
+  <meta name="description" content="Website Nulis Online Otomatis">
+  <meta name="author" content="Ghib'S">
 
-  <title>Ghibs | Rajin Nulis V2</title>
+  <title>Ghibs | Rajin Nulis</title>
 
 <link href="https://jnckmedia.com/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="https://jnckmedia.com/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -55,11 +55,11 @@
 <div class="form-row">
 <div class="form-group col-md-6">
 <label for="name">Nama</label>
-<input type="text" class="form-control" id="name" oninput="txtName = this.value" placeholder="Nama : RaghibGB">
+<input type="text" class="form-control" id="name" oninput="txtName = this.value" placeholder="Nama : Raghib G. B.">
 </div>
 <div class="form-group col-md-6">
 <label for="name">Kelas / NIM</label>
-<input type="text" class="form-control" id="kelas" oninput="txtKelas = this.value" placeholder="Kelas : XI EA 2">
+<input type="text" class="form-control" id="kelas" oninput="txtKelas = this.value" placeholder="Kelas : XI 2">
 </div>
 </div>
 <div class="form-row">
@@ -70,7 +70,7 @@
 </div>
 <div class="form-group">
 <label for="comment">Teks :</label>
-<textarea class="form-control" id="content" rows="10" oninput="txtContent = this.value" placeholder="RaghibGB Website"></textarea>
+<textarea class="form-control" id="content" rows="10" oninput="txtContent = this.value" placeholder="Ghib'S Website"></textarea>
 </div>
 <div class="form-group">
 <button class="btn btn-primary g-recaptcha" onclick="downloadCanvas(document.getElementById('defaultCanvas0'), 'hasil.png')">Unduh Hasil</button>
@@ -104,7 +104,7 @@
 
                     txtDate = '';
                     txtName = '';
-                    txtJurusan = '';
+                    txtFakultas = '';
                     txtKelas = '';
                     txtContent = '';
                 }
@@ -152,7 +152,7 @@
             let bg, font, paper, margin, gap, fontsize = 16;
             let txtDate = '',
             txtName = '',
-            txtJurusan = '',
+            txtFakultas = '',
             txtKelas = '',
             txtContent = '';
 
@@ -345,18 +345,18 @@
                     
                     translate(margin - 8, margin * 4);
 
-                    if(txtName && txtKelas && !txtJurusan){
+                    if(txtName && txtKelas && !txtFakultas){
                         text(txtName, 0, -20);
                         text(txtKelas, 0, 0);
-                    } else if(txtName && !txtKelas && txtJurusan){
+                    } else if(txtName && !txtKelas && txtFakultas){
                         text(txtName, 0, -20);
-                        text(txtJurusan, 0, 0);
-                    } else if(txtName && !txtKelas && !txtJurusan){
+                        text(txtFakultas, 0, 0);
+                    } else if(txtName && !txtKelas && !txtFakultas){
                         text(txtName, 0, 0);
-                    } else if(txtName && txtKelas && txtJurusan){
+                    } else if(txtName && txtKelas && txtFakultas){
                         text(txtName, 0, -40);
                         text(txtKelas, 0, -20);
-                        text(txtJurusan, 0, 0);
+                        text(txtFakultas, 0, 0);
                     }
 
                     text(txtDate, 450, 0);
